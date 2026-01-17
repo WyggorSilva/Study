@@ -1,2 +1,2 @@
 # Study
- Studying languages ​​for Front-End
+ Studying languages ​​for Front-End.
