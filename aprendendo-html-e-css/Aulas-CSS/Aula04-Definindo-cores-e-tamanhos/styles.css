@@ -1,0 +1,43 @@
+/* Existe 3 formas de definir a cor - Pelo nome(blue), 
+via rgb(255,0,0) ou rgba(255,0,0,0.5) ou Hexadecimal(#ff0000)
+O jeito mais utilizado é o Hexadecimal*/
+
+h1{
+    color: #ff0000;
+}
+
+#hexadecimal{
+    color: #0000ff;
+}
+
+#rgb{
+    color: rgb(0, 255, 0);
+}
+
+#rgba{
+    color: rgba(234, 223, 13, 0.5);
+}
+
+#corNome{
+    color: pink;
+}
+
+section{
+    background-color: #fffff0;
+}
+#porcentagem{
+    font-size: 50%;
+}
+
+#em{
+    font-size: 2em; /* 2x o tamanho do elemento*/
+}
+
+#rem{
+    font-size: 2rem; /* 1x o tamanho do elemento raiz HTML*/
+}
+
+#caixa{
+    background-color: #ffc0cb;
+    width: 10%; /*ou pode ser "em", "rem" ou "px"*/
+}
