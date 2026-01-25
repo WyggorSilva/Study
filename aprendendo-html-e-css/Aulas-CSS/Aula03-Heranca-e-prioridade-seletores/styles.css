@@ -1,0 +1,28 @@
+section{
+    background-color: red;
+}
+
+.textoAzul{
+    color: blue;
+}
+
+.textoAmarelo{
+    color: yellow;
+    font-weight: bold;
+}
+
+#textoRosa{
+    color: palevioletred;
+    font-weight: bold;
+    font-size: large;
+}
+
+nav{
+    font-size: 30px;
+    font-family: 'Times New Roman';
+    font-style: italic;
+}
+img{
+    width: 400px;
+    height: 300px;
+}
