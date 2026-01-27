@@ -1,0 +1,16 @@
+img{
+    border-radius: 5%; /*Realizando a bordas da imagens*/
+    height: 300px; /*Tamanho da imagem*/
+    border: 2px solid #ff0000; /*Colocando bordas na imagem*/
+}
+#baby{
+    background-image: url('assets/bebe.jpg');
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; /*background-position: horizontal e vertical*/
+    filter: grayscale(100%); /*Coloca a imagem em pretoebranco*/
+    /* filter: brightness(100%); */
+    border-radius: 5%;
+}

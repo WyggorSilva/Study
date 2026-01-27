@@ -1,0 +1,16 @@
+h1{
+    color: #ff0000;
+}
+p{
+    /* Familia de fontes: "serif", "sans-serif", "cursive", "fantasy", "monospace" */
+   font-family: "Rubik", monospace; 
+   font-weight: 100; /*Varia de 100 a 900*/
+   /* font-style: normal; - Referente ao estilo da fonte que você quer. */
+}
+
+#exemplo{
+    text-transform: capitalize;/*UPPERCASE, lowercase, Capitalize*/
+    display: inline; 
+    background-color: #ff0000; /*Cor de fundo*/
+    text-align: center; /*Alinhamento do texto*/
+}
