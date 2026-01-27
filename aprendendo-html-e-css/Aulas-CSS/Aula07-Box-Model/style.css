@@ -1,0 +1,19 @@
+#caixa1, #caixa2{
+    width: 100px;
+    height: 100px;
+}
+
+#caixa1{
+    background-color: #ff0000;
+    padding: 10px; /*Adiciona um ESPAÇAMENTO DE FORMA INTERNA NA DIV*/
+    border: 2px solid #000000; /*Adiciona uma BORDA em volta da DIV*/
+    margin: 10px; /*Adiciona um ESPAÇAMENTO em volta da DIV*/
+    box-sizing: border-box; /*Ela traz o valor de W/H como o valor final*/
+}
+#caixa2{
+    background-color: #008000; 
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 10px;
+}
+
