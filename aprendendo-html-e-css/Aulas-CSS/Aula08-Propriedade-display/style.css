@@ -1,0 +1,26 @@
+#block{
+    background-color: #e934344c;
+}
+
+#inline{
+    background-color: #5be9344c;
+}
+
+#inlineblock{
+    background-color: #3434e94c;
+}
+
+p{
+    background-color: #ff0000;
+    width: 100px;
+}
+
+span{
+    background-color: green;
+    /* width: 400px; Não funciona esse atributos de tamanho no display block */
+}
+
+#itemInlineBlock{
+    background-color: #6b2cd8;
+    display: inline-block;
+}
