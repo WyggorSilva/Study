@@ -1,0 +1,63 @@
+body{
+    background-image: linear-gradient(135deg, #0038ff, #E48F41);
+    height: 100vh;
+}
+
+#fotoLipe{
+    background-image: url("assets/lipe.jpg");
+    height: 255px;
+    width: 255px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+h1{
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 33px 0px 27px 0px;
+    text-align: center;
+}
+
+.buttonSocial{
+    display: block;
+    border-radius: 50px;
+    width: 255px;
+    height: 40px;
+    background-color: #00000030;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    font-family: "Open Sans";
+    margin-bottom: 27px;
+    position: relative;
+    cursor: pointer;
+
+    img{
+        position: absolute;
+        height: 24px;
+        left: 42px;
+        top: 9px;
+    }
+
+    p{
+        position: absolute;
+        left: 80px;
+        top: 12px;
+        font-size: 1.125rem;
+        line-height: 1.125rem;
+    }
+}
+
+.faceButton{
+    background-color: #00000095;
+}
+
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
