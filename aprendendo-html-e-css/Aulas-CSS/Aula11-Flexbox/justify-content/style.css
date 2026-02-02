@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.container{
+    display: flex; /*Para atribuir o flexbox'*/
+    border: 2px solid black;
+    flex-direction: row; /*row, row-reverse, column, column-reverse*/
+    justify-content: space-evenly; /*flex-start, center, flex-end, space-around, space-between, space-evenly*/ 
+
+}
+
+.item{
+    background-color: tomato;
+    /* margin: 10px; */
+    
+}
