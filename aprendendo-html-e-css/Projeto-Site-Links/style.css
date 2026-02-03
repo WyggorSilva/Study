@@ -22,7 +22,8 @@ h1{
 }
 
 .buttonSocial{
-    display: block;
+    display: flex;
+    align-items: center;
     border-radius: 50px;
     width: 255px;
     height: 40px;
@@ -34,20 +35,15 @@ h1{
     margin-bottom: 27px;
     position: relative;
     cursor: pointer;
+    padding-left: 35px;
 
     img{
-        position: absolute;
         height: 24px;
-        left: 42px;
-        top: 9px;
     }
 
     p{
-        position: absolute;
-        left: 80px;
-        top: 12px;
         font-size: 1.125rem;
-        line-height: 1.125rem;
+        padding-left: 15px;
     }
 }
 
@@ -55,9 +51,9 @@ h1{
     background-color: #00000095;
 }
 
-#content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#contentParent{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
