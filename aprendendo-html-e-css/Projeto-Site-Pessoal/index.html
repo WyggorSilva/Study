@@ -21,31 +21,82 @@
             <li><b>Contato</b></li>
         </ul>
     </nav>
+
     <section id="homeSection">
         <div id="photoHome"></div>
         <div id="homeTexts">
-            <h1>Wyggor Silva</h1>
-            <h2>Desenvolvedor Front-End</h2>
-            <div class="downloadButton">
-                <img src="assets/icon/download.png">
-                <a href="sources/curriculo.pdf" download="curriculo.pdf">Baixar Currículo</a>
+            <div>
+                <h1 class="title">Wyggor Silva</h1>
+                <h2>Desenvolvedor Front-End</h2>
+                <div class="downloadButtonHome defaultButton">
+                    <img src="assets/icon/download.png">
+                    <a href="sources/curriculo.pdf" download="curriculo.pdf">Baixar Currículo</a>
+                </div>
             </div>
         </div>
     </section>
+
     <section id="aboutSection">
-        <h1>Sobre mim</h1>
-        <p>Prazer! Eu sou o Wyggor, tenho 31 anos e sou de Brasília - DF. 
-            Atualmente trabalho no setor financeiro da Agência Nacional de Águas e Saneamento Básico - ANA 
-            e estou realizando a migração de carreira para Desenvolvedor Front-End. 
-            Sou formado em Sistemas de Informação com Pós-Graduação em Segurança da Informação pela Estácio.</p>
-            <a href="sources/curriculo.pdf" download="curriculo.pdf">Confira o meu LinkedIN</a>
-            <div></div>
+        <div id="aboutMeTextsFlexContainer">
+            <div id="aboutMeTextsFlexItem">
+                <h1 class="title">Sobre mim</h1>
+                <p class="customLineHeight">Prazer! Eu sou o Wyggor, tenho 31 anos e sou de Brasília - DF. 
+                    Atualmente trabalho no setor financeiro da Agência Nacional de Águas e Saneamento Básico - ANA 
+                    e estou realizando a migração de carreira para Desenvolvedor Front-End. 
+                    Sou formado em Sistemas de Informação com Pós-Graduação em Segurança da Informação pelo Centro Universitário Estácio de Brasília - DF.</p>
+                 <div class="linkedindButton defaultButton">
+                    <img src="assets/icon/arrow.png">
+                    <a href="https://www.linkedin.com/in/wyggor-silva/" target="_blank">Confira meu LinkedIN</a>
+                </div>
+            </div>
+        </div>
+        <div id="aboutMePhoto"></div>
     </section>
+
     <section id="skillsSection">
-        <h1>Skills</h1>
+        <div class="overlay">
+            <h1 class="title">Skills</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript ES6</li>
+                <li>Git</li>
+                <li>GitHub</li>
+                <li>CorelDraw</li>
+            </ul>
+            <div class="downloadButtonSkills defaultButton">
+                <img src="assets/icon/download.png">
+                <a href="sources/curriculo.pdf" download="curriculo.pdf">Baixar Currículo Completo</a>
+            </div>
+        </div> 
     </section>
+
     <section id="contactSection">
-        <h1>Contato</h1>
+
+        <div id="contactTextsContainer">
+            <div id="contactTextsChild">
+                <h1 class="title">Contato</h1>
+                <p class="customLineHeight">Fique à vontade para entrar em contato comigo. Abaixo estão minhas redes sociais e demais formas de comunicação.</p>
+                <address class="emailAndPhone">
+                    <div class="contactItem">
+                        <img src="assets/icon/email.png">
+                        <p>phellipesilva11@gmail.com</p>
+                    </div>
+                    <div class="contactItem">
+                        <img src="assets/icon/whatsapp.png">
+                        <p>+55 (61) 99690-8855</p>
+                    </div>
+                </address>
+        
+                <div class="socialMedia">
+                    <a href="https://www.linkedin.com/in/wyggor-silva/" target="_blank"><img src="assets/icon/linkedin.png"></a>
+                    <a href="https://www.instagram.com/eiwyggorsilva/" target="_blank"><img src="assets/icon/instagram.png"></a>
+                    <a href="https://github.com/WyggorSilva/" target="_blank"><img src="assets/icon/github.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactPhoto"></div>
     </section>
 </body>
 </html>
