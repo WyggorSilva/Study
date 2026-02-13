@@ -148,7 +148,7 @@ nav{
         }
 
         .downloadButtonSkills{
-            background-color: #3C3C3C90;
+            background-color: #3C3C3C90;   
         }
     }
 }
@@ -187,6 +187,105 @@ nav{
         background-image: url('assets/photo/contactPhoto.jpeg');
         width: 40vw;
         background-size: cover;
+        background-position: center;
+    }
+}
+
+.emailAndPhone{
+    font-style: normal;
+    padding-top: 40px;
+    padding-bottom: 60px;
+
+
+    .contactItem{
+        display: flex;
+        padding-top: 12px;
+
+        p{
+            padding-left: 14px;
+        }
+    }
+}
+
+.socialMedia{
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+    
+
+    a{
+        background-color: #3756F3;
+        padding: 12px;
+        border-radius: 8px;
+        transition: 0.3s;
+    }
+    a:hover{
+        transform: translateY(5px); /*Serve para dar um deslocamento no item quando passar o cursor do mouse*/
+        box-shadow: 0 0 15px #3C3C3C; /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
+    }
+
+    img{
+
+        height: 28px;
+    }
+
+    
+}
+
+
+#projectSection{
+    background-color: #222222;
+    padding: 100px 10%;
+    flex-wrap: wrap;
+
+    h1{
+        margin-bottom: 40px;
+        letter-spacing: 3px;
+    }
+
+    .groupCards{
+        display: flex;
+        gap: 30px;
+        text-align: justify;
+        padding-top: 100px;
+        overflow: auto;
+    }
+
+    .card{
+        background-color: #1C1C1C;
+        border: 2px solid #3C3C3C;
+        padding: 40px;
+        width: 400px;
+        border-radius: 15px;
+        transition:  0.3s;
+        flex-wrap: wrap;
+    }
+
+    .card :hover{
+        transform: translateY(5px); /*Serve para dar um deslocamento no item quando passar o cursor do mouse*/
+        box-shadow: 0 0 15px #3C3C3C; /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
+    }
+
+    h2{
+        margin-bottom: 15px;
+        font-size: 2rem;
+        color: #b6b6b6;
+    }
+
+    p{
+        font-size: 1rem;
+        color: #ffffff;
+        margin-bottom: 20px;
+    }
+
+    .cardButton{
+        background-color: #ff9e44;
+        color: #ffffff;
+        padding: 7px 14px 7px 14px;
+        border-radius: 20px;
+        transition: 0.3s;
+        text-decoration: none;
+        gap: 12px;
     }
 }
 
@@ -210,35 +309,3 @@ nav{
     line-height: 2.4rem;
 }
 
-.emailAndPhone{
-    font-style: normal;
-    padding-top: 40px;
-    padding-bottom: 60px;
-
-
-    .contactItem{
-        display: flex;
-        padding-top: 12px;
-
-        p{
-            padding-left: 14px;
-        }
-    }
-}
-
-.socialMedia{
-    display: flex;
-    gap: 1rem;
-    cursor: pointer;
-
-    a{
-        background-color: #3756F3;
-        padding: 12px;
-        border-radius: 8px;
-    }
-
-    img{
-
-        height: 28px;
-    }
-}
