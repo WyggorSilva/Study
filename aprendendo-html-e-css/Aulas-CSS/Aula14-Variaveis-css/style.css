@@ -1,0 +1,89 @@
+:root{
+    --primary-color: rgb(245, 124, 88);
+    --segundary-color: rgb(185, 78, 46);
+    --border-radius-base: 10px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    padding: 2rem;
+}
+
+h2{
+    margin-top: 3rem;
+}
+
+.buttons{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+    button{
+        background-color: var(--primary-color);
+        padding: 1rem;
+        border-radius: var(--border-radius-base);
+        border: none;
+        color: #ffffff;
+        transition: 1s;
+    }
+
+    button:hover{
+        background-color: var(--segundary-color);
+    }
+    button:focus{
+        outline: 2px solid var(--segundary-color);
+    }
+}
+
+input{
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+input:focus{
+        outline: 2px solid var(--segundary-color);
+    }
+
+.texts{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+
+    p:first-child{
+        font-weight: bold;
+        color: var(--primary-color);
+    }
+
+    p:last-child{
+        font-weight: bold;
+        color: var(--segundary-color);
+    }
+    
+}
+
+.images{
+    margin-top: 2rem;
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+
+    img{    
+        height: 100px;
+    }
+
+    img:nth-child(odd){
+        border-radius: 10%;
+    }
+
+    img:nth-child(even){
+        filter: grayscale(100%);
+    }
+}

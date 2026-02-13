@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    font-family: "Anton SC", sans-serif;
+    font-size: 5rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.textsContainer{
+    padding: 1rem;
+}
+
+.imagesContainer{
+    display: flex;
+}
+
+.image1{
+    background-image: url("assets/image1.jpg");
+    height: 400px;
+    width: 50vw;
+    background-size: cover;
+}
+
+.image2{
+    background-image: url("assets/image2.jpg");
+    height: 400px;
+    width: 50vw;
+    background-size: cover;
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .imagesContainer{
+        flex-direction: column;
+    }
+
+    .image1{
+        width: 100vw;
+    }
+
+    .image2{
+        width: 100vw;
+    }
+}
+
+@media (max-width: 600px){
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .imagesContainer{
+        flex-direction: column;
+    }
+
+    .image1{
+        width: 100vw;
+    }
+
+    .image2{
+        width: 100vw;
+    }
+}
+
+/* @media (min-width: 600px){
+    h1{
+        font-size: 4rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .imagesContainer{
+        flex-direction: column;
+    }
+
+    .image1{
+        width: 100vw;
+    }
+
+    .image2{
+        width: 100vw;
+    }
+} */
+
+/*CELULARES -> 700px ou menos*/
+/*TABLETS -> 701px e 800px*/
+/*TELAS GRANDES -> 1200px*/
+
+/*Orientation: portrait ou landscape*/
+@media (orientation: landscape){
+    body{
+        background-color: red;
+    }
+}
