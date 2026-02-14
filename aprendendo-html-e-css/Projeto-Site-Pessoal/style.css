@@ -113,7 +113,7 @@ nav{
 }
 
 #skillsSection{
-    background-image: url(assets/photo/skillsPhoto.jpg);
+    background-image: url("assets/photo/skillsPhoto.jpg");
     background-size: cover;
 
     .overlay{
