@@ -1,9 +1,16 @@
+:root{
+    --primary-color: #3C3C3C;
+    --segundary-color: #ffffff;
+    --highlight-color: #ff9e44;
+    --border-radius-base: 8px;
+}
+
 *{
     font-family: "Rubik", sans-serif;
 }
 
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 nav{
@@ -19,13 +26,13 @@ nav{
     box-shadow: 0px 4px 4px 0px #00000025;
    
     a{
-        color: #3C3C3C;
+        color: var(--primary-color);
         text-decoration: none;
     }
 }
 
 .title{
-        color: #ffffff;
+        color: var(--segundary-color);
         font-size: 3.8rem;
         text-transform: uppercase;
 }
@@ -36,6 +43,10 @@ nav{
     li{
         padding-left: 73px;
     }
+
+    li:last-child{
+        font-weight: bold;
+    }
 }
 
 #homeSection{
@@ -44,7 +55,7 @@ nav{
     display: flex;
     justify-content: space-between;
 
-    #photoHome{
+    #homePhoto{
     width: 50vw;
     height: calc(100vh - 65px);
     background-image: url('assets/photo/lipeHome.jpeg');
@@ -52,7 +63,7 @@ nav{
     background-position: center;
 }
 
-    #homeTexts{
+    #homeContent{
     display: flex;
     flex-direction: column;
     width: 60vw;
@@ -71,11 +82,11 @@ nav{
 
 
 .downloadButtonHome{
-    background-color: #ff9e44;
+    background-color: var(--highlight-color);
 }
 
 #aboutSection{
-    background-color: #ff9e44;
+    background-color: var(--highlight-color);
     display: flex;
     
 
@@ -87,6 +98,8 @@ nav{
         align-items: center;
 
         #aboutMeTextsFlexItem{
+            display: flex;
+            flex-direction: column;
             width: 80%;
         }
     }
@@ -100,7 +113,7 @@ nav{
 
     p{
         font-size: 1.75rem;
-        color: #ffffff;
+        color: var(--segundary-color);
         padding: 45px 0 56px 0;
         text-align: justify;
     }
@@ -126,7 +139,7 @@ nav{
         flex-direction: column;
 
         h1{
-            color: #3C3C3C;
+            color: var(--primary-color);
             padding-bottom: 68px;
         }
 
@@ -142,8 +155,8 @@ nav{
         li{
             background-color: #00000039;
             padding: 12px 17px;
-            border-radius: 8px;
-            color: #ffffff;
+            border-radius: var(--border-radius-base);
+            color: var(--segundary-color);
             font-size: 1.93rem;
         }
 
@@ -164,7 +177,7 @@ nav{
         justify-content: center;
         flex-wrap: wrap;
         align-items: center;
-        max-width: 80%;
+        max-width: 100%;
         text-align: justify;
 
         h1{
@@ -173,11 +186,13 @@ nav{
         }
 
         p{
-            color: #ffffff;
+            color: var(--segundary-color);
             font-size: 1.56rem;
         }
 
         #contactTextsChild{
+            display: flex;
+            flex-direction: column;
             width: 80%;
             max-width: 700px;
         }
@@ -199,7 +214,7 @@ nav{
 
     .contactItem{
         display: flex;
-        padding-top: 12px;
+        padding: 12px 0 0 10px;
 
         p{
             padding-left: 14px;
@@ -216,12 +231,12 @@ nav{
     a{
         background-color: #3756F3;
         padding: 12px;
-        border-radius: 8px;
+        border-radius: var(--border-radius-base);
         transition: 0.3s;
     }
     a:hover{
         transform: translateY(5px); /*Serve para dar um deslocamento no item quando passar o cursor do mouse*/
-        box-shadow: 0 0 15px #3C3C3C; /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
+        box-shadow: 0 0 15px var(--primary-color); /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
     }
 
     img{
@@ -253,7 +268,7 @@ nav{
 
     .card{
         background-color: #1C1C1C;
-        border: 2px solid #3C3C3C;
+        border: 2px solid var(--primary-color);
         padding: 40px;
         width: 400px;
         border-radius: 15px;
@@ -263,7 +278,7 @@ nav{
 
     .card :hover{
         transform: translateY(5px); /*Serve para dar um deslocamento no item quando passar o cursor do mouse*/
-        box-shadow: 0 0 15px #3C3C3C; /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
+        box-shadow: 0 0 15px var(--primary-color); /*Serve para dar criar uma sombra no item quando passar o cursor do mouse*/
     }
 
     h2{
@@ -274,13 +289,13 @@ nav{
 
     p{
         font-size: 1rem;
-        color: #ffffff;
+        color: var(--segundary-color);
         margin-bottom: 20px;
     }
 
     .cardButton{
-        background-color: #ff9e44;
-        color: #ffffff;
+        background-color: var(--highlight-color);
+        color: var(--segundary-color);
         padding: 7px 14px 7px 14px;
         border-radius: 20px;
         transition: 0.3s;
@@ -294,13 +309,13 @@ nav{
     align-items: center;
     width: fit-content;
     padding: 8px 14px;
-    color: #ffffff;
-    border-radius: 8px;
+    color: var(--segundary-color);
+    border-radius: var(--border-radius-base);
     cursor: pointer;
 
     a{
         padding-left: 11px;
-        color: #ffffff;
+        color: var(--segundary-color);
         text-decoration: none;
     }
 }
@@ -309,3 +324,105 @@ nav{
     line-height: 2.4rem;
 }
 
+@media(orientation: portrait){
+
+    .title{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    #homeSection{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            font-size: 1.71rem;
+            text-align: center;
+        }
+
+        #homePhoto{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 3.8rem;
+        }
+
+        #homeTexts{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    #aboutSection{
+        #aboutMeTextsFlexContainer{
+            width: 100vw;
+        }
+        #aboutMeTextsFlexItem{
+            align-items: center;
+        
+        }
+            p{
+                text-align: justify;
+            }
+
+        #aboutMePhoto{
+            display: none;
+        }
+    }
+
+    #projectSection{
+    
+        h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+    }   
+
+    #contactSection{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        padding: 3.5rem 0;
+
+        h1{
+            text-align: center;
+        }
+
+        #contactTextsChild{
+            align-items: center;
+        }
+
+        #contactTextsContainer{
+            width: 100vw;
+        }
+
+        #contactPhoto{
+            height: 30vh;
+            width: 30vh;
+            border-radius: 50%;
+            margin-bottom: 1.8rem;
+        }
+
+        p{
+            text-align: justify;
+        }
+
+        .contactItem:last-child{
+            text-align: start;
+            img{
+                width: 1.75rem;
+                height: 1.75rem;
+            }
+            
+        }
+        
+    }
+}
+
+@media (max-width: 750px) {
+        nav{
+            display: none;
+        }
+    }
